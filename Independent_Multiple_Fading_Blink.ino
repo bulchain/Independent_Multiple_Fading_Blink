@@ -10,15 +10,17 @@
 #define greenLED 3
 #define redLED 5
 #define yellowLED 9
-#define blueLED 11 //Blue LED
+#define blueLED 11 
+
+//you can add more LED as long as the amount of PWM pin support
 //define fade parameters
 //play around all these number to see the effect
 #define fadetime_min 50 //interval per cycle in millisec
-#define fadetime_max 500
+#define fadetime_max 300 //the higher value increase flashing frequency
 #define fadevalue_min 10 //step per cycle of 255
-#define fadevalue_max 200
+#define fadevalue_max 200 //
 #define sleeptime_min 500 //LED sleep after completely off
-#define sleeptime_max 5000
+#define sleeptime_max 3000
 
 //Variable to control green
 bool greenUpDown = true;
